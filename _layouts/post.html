@@ -52,6 +52,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <div class="prev"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a>
 {% endif %}
 {% if page.previous and page.next %}
+
 |<a href="/archive.html">文章归档</a>|
 {% endif %}
 {% if page.next %}
@@ -63,7 +64,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <div id="related-posts">
 <h3>相关文章</h3>
 {% for post in site.related_posts limit:7 %}
+{% unless post.draft %}
 <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+{% endunless %}
 {% endfor %}
 </div>
 <br>
