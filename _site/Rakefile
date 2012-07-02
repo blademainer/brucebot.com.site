@@ -11,11 +11,11 @@ CONFIG = {
   'post_ext' => "markdown",
 }
 
-#Usage: rake write["title",category]
+#Usage: rake post["title",category]
 desc "Given a title as an argument, create a new post file"
-task :write, [:title, :category] do |t, args|
+task :post, [:title, :category] do |t, args|
   filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args[:title].gsub(/\s/, '-').downcase}.markdown"
-  path = File.join("_draft", filename)
+  path = File.join("_posts", filename)
   if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
   File.open(path, 'w') do |file|
     file.write <<-EOS
@@ -25,6 +25,7 @@ categories:
  - #{args[:category]}
 title: #{args[:title]}
 tags:
+draft:true
   - 
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 ---

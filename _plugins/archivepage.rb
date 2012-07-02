@@ -18,7 +18,9 @@ module Jekyll
       self.content = <<-EOS
 <ul>
 {% for post in page.posts %}
+{% unless post.draft %}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endunless %}
 {% endfor %}
 </ul>
 EOS

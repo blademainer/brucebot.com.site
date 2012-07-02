@@ -3,6 +3,7 @@ layout: default
 title: 于仁颇黎|机器人行业从业者,观察者
 ---
 {% for post in paginator.posts %}
+{% unless post.draft %}
 <div class="wrapper">
     <h2 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a> </h2>
     <div class="entry-meta">
@@ -10,9 +11,10 @@ title: 于仁颇黎|机器人行业从业者,观察者
                             |
                             <span>作者:<a href="http://brucebot.com">于仁颇黎</a></span>
                         </div>
-    {{ post.content | truncatehtml: 170 }}
+    {{ post.content | truncatehtml: 199 }}
     <p> <a href="{{ post.url }}/#more" class="more-link"><span class="readmore">阅读全文 &raquo; </span></a></p>
     </div>
+     {% endunless %}
 {% endfor %}
 
 <!-- Pagination links -->
@@ -24,25 +26,24 @@ title: 于仁颇黎|机器人行业从业者,观察者
     {% if paginator.previous_page == 1 %}
     <a href="/" class="current"><<前页</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}"><<前页</a>
+    <a href="/page{{paginator.previous_page}}/"><<前页</a>
     {% endif %}
   {% else %}
     <span><<前页</span>
   {% endif %}
-{% for count in (2..paginator.total_pages) limit:8 %}
+{% for count in (2..paginator.total_pages) limit:6 %}
       {% if count == paginator.page %}
       <span class="current-page">{{count}}</span>
       {% else %}
-      <a href="/page{{count}}">{{count}}</a>
+      <a href="/page{{count}}/">{{count}}</a>
       {% endif %}
     {% endfor %}
-
   {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}">后页>></a>
+    <a href="/page{{paginator.next_page}}/">后页>></a>
   {% else %}
     <span>后页>></span>
   {% endif %}
-  <a href="/page{{paginator.total_pages}}">末页</a>
+  <a href="/page{{paginator.total_pages}}/">末页</a>
 </div>
 </div>
 

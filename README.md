@@ -14,9 +14,11 @@ instagram.php*.
 
 ###New post
 
-`rake write["post tile",category]`
+`rake post["post tile",category]`
 
 Automatically Open the new post in default text editor, Mine is [Mou](http://mouapp.com).
+
+There is a `draft` switch for each post, after finish the post, set it to `false` to let jekyll process.
 
 ###New Page
 

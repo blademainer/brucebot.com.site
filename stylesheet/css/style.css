@@ -452,6 +452,40 @@ a:hover{
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.55);
 }
 
+/*gallery */
+#gallery a img {
+    border-style: ;
+}
+#gallery img {
+    border-style: solid;
+    border-color: #b39898;
+    border-width: 3px;
+    padding-bottom: 37px;
+}
+
+#gallery div {
+    padding-top: -20px;
+}
+
+#gallery h4 {
+    text-decoration: none;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+    font-variant: small-caps;
+    margin-top: -37px;
+    margin-left: 10px;
+}
+
+#gallery ul {
+  width:100%;
+  overflow:hidden;
+}
+#gallery ul li {
+  list-style-type:none;
+  float:left;
+  width:50%;
+}
+
+
 /* social links on single pages */
 .social-links-single{
   width: 100%;

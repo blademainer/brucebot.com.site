@@ -3,6 +3,7 @@ layout: default
 title: 于仁颇黎|机器人行业从业者,观察者
 ---
 {% for post in site.posts limit:7 %}
+{% unless post.draft %}
 <div class="wrapper">
     <h2 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a> </h2>
     <div class="entry-meta">
@@ -26,5 +27,6 @@ title: 于仁颇黎|机器人行业从业者,观察者
 <div class="span9 column">
         <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a>   {% endif %}   {% if page.next.url %}    <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a>   {% endif %} </p>  
 </div>
+{% endunless %}
 {% endfor %}
 

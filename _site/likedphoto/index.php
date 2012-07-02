@@ -94,9 +94,12 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
   						
   						<li><a href="/categories/hell">hell</a></li>
   						
+  						<li><a href="/categories/生活乐趣">生活乐趣</a></li>
+  						
   						<li class="roboticsbooks"><a href="/pages/Robotics-Books.html">机器人书籍</a></li>
   						<li class="archive"><a href="/archive.html">文章归档</a></li>
-						<li class="instagram"><a href="/instagram/">随手拍照</a></li>
+						<li class="instagram"><a href="/instagram/">Instagram</a></li>
+						<li class="gallery"><a href="/gallery/">我的相册</a></li>
 						<li class="Link"><a href="/pages/Link.html">友情链接</a></li>
 						<li class="search"><a href="/pages/search.html">搜索本站</a></li>
 						<li class="roboticsfaq"><a href="http://roboticsfaq.com">RoboticsFAQ</a></li>
@@ -115,7 +118,15 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 					<h3 class="widget-title">最近文章</h3>
 						<ul>
 						
-							<li><a href="/hell/2012/05/01/readme.html">README</a></li>
+						
+						
+						
+							<li><a href="/2012/05/shot-bird/">打鸟第一季</a></li>
+						
+						
+						
+							<li><a href="/2012/05/readme/">README</a></li>
+						
 						
 					</ul>
 					<h3 class="widget-title">最近评论</h3>
@@ -135,7 +146,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 				    <h3 class="widget-title">博客信息</h3>
 				    <ul>
 				    <li>创建始于:2004/09/21/</li>	
-				    <li>文章总数:1篇</li>
+				    <li>文章总数:3篇</li>
 				    <li>主题fork自<a href="http://maikunari.com/sutra/">Sutra</a></li>
 					<li>Hosted On <strong>Linode</strong></li>
 				    <li>Powered by<a href="https://github.com/mojombo/jekyll/">Jekyll</a> & <a href="http://www.disqus.com/">disqus</a></li>

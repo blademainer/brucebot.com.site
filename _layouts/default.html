@@ -58,7 +58,8 @@
   						{% endfor %}
   						<li class="roboticsbooks"><a href="/pages/Robotics-Books.html">机器人书籍</a></li>
   						<li class="archive"><a href="/archive.html">文章归档</a></li>
-						<li class="instagram"><a href="/instagram/">随手拍照</a></li>
+						<li class="instagram"><a href="/instagram/">Instagram</a></li>
+						<li class="gallery"><a href="/gallery/">我的相册</a></li>
 						<li class="Link"><a href="/pages/Link.html">友情链接</a></li>
 						<li class="search"><a href="/pages/search.html">搜索本站</a></li>
 						<li class="roboticsfaq"><a href="http://roboticsfaq.com">RoboticsFAQ</a></li>
@@ -77,7 +78,9 @@
 					<h3 class="widget-title">最近文章</h3>
 						<ul>
 						{% for post in site.posts offset:0 limit:17 %}
+						{% unless post.draft %}
 							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endunless %}
 						{% endfor %}
 					</ul>
 					<h3 class="widget-title">最近评论</h3>
