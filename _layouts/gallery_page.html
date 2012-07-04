@@ -1,14 +1,18 @@
 ---
 layout: page
 title:
+comments: true
 ---
-{% for image in page.images %}
-    <div id="gallery">
-        <img src="{{ image }}" /><h4>Exif info:</h4>
-    </div>
-{% endfor %}
+
+{% for i in (0..page.amount) %}
+     <div id="gallery">
+         <img src="{{ page.images[i] }}" /><h5>{{ page.image_info[i] }}</h5>
+       </div>
+  {% endfor %}
+
 <h3><a href="/{{ site.gallery_dir }}">Back To Gallery</a></h3>
-<div class="misc-content">
+<strong>注：</strong><small>图片请莫随意使用，如需使用请联系:<a href=mailto:bruceboty@gmail.com>bruceboty@gmail.com</a>
+</small>
 <div class="comment">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -20,4 +24,4 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 })();
 </script>
 </div>
-</div>
+

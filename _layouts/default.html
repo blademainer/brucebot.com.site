@@ -5,6 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
@@ -16,7 +18,7 @@
 	<script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'google-analytics number']);
+  _gaq.push(['_setAccount', 'UA-29122907-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -58,13 +60,10 @@
   						{% endfor %}
   						<li class="roboticsbooks"><a href="/pages/Robotics-Books.html">机器人书籍</a></li>
   						<li class="archive"><a href="/archive.html">文章归档</a></li>
-						<li class="instagram"><a href="/instagram/">Instagram</a></li>
 						<li class="gallery"><a href="/gallery/">我的相册</a></li>
 						<li class="Link"><a href="/pages/Link.html">友情链接</a></li>
 						<li class="search"><a href="/pages/search.html">搜索本站</a></li>
-						<li class="roboticsfaq"><a href="http://roboticsfaq.com">RoboticsFAQ</a></li>
-						<li class="english"><a href="http://staubli.me">English</a></li>
-						<li class="wishlist"><a href="http://goo.gl/hcFh5">WishList</a></li>
+						<li class="instagram"><a href="/instagram/">Instagram</a></li>
 						<li class="about"><a href="/pages/about.html">About</a></li>
 					<h3 class="widget-title">联系我</h3>
 					<div class="widget_rss">
@@ -83,8 +82,8 @@
 						{% endunless %}
 						{% endfor %}
 					</ul>
-					<h3 class="widget-title">最近评论</h3>
-					<script type="text/javascript" src="http://disqus.disqus.com/recent_comments_widget.js?num_items=7&hide_avatars=1&avatar_size=24&excerpt_length=50"></script>
+					<!--<h3 class="widget-title">最近评论</h3>
+					<script type="text/javascript" src="http://brucebot.disqus.com/recent_comments_widget.js?num_items=7&hide_avatars=1&avatar_size=24&excerpt_length=50"></script>-->
 					<h3 class="widget-title">文章归档</h3>
 					<ul>
 					<li class="Link"><a href="/2012/">2012</a></li>
@@ -102,8 +101,8 @@
 				    <li>创建始于:2004/09/21/</li>	
 				    <li>文章总数:{{site.posts.size}}篇</li>
 				    <li>主题fork自<a href="http://maikunari.com/sutra/">Sutra</a></li>
-					<li>Hosted On <strong>Linode</strong></li>
-				    <li>Powered by<a href="https://github.com/mojombo/jekyll/">Jekyll</a> & <a href="http://www.disqus.com/">disqus</a></li>
+					<li>Hosted On <a href="http://www.linode.com/?r=3a7a044d481045ae2ff2f4469357779e2322f5c6/">Linode</a></li>
+				    <li>Powered by<a href="https://github.com/mojombo/jekyll/">Jekyll</a> and <a href="http://www.disqus.com/">disqus</a></li>
 					</ul>
 				</li>
 			</ul><!--xoxo-->

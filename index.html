@@ -3,7 +3,6 @@ layout: default
 title: 于仁颇黎|机器人行业从业者,观察者
 ---
 {% for post in paginator.posts %}
-{% unless post.draft %}
 <div class="wrapper">
     <h2 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a> </h2>
     <div class="entry-meta">
@@ -11,10 +10,9 @@ title: 于仁颇黎|机器人行业从业者,观察者
                             |
                             <span>作者:<a href="http://brucebot.com">于仁颇黎</a></span>
                         </div>
-    {{ post.content | truncatehtml: 199 }}
+    {{ post.content | truncatehtml: 257 }}
     <p> <a href="{{ post.url }}/#more" class="more-link"><span class="readmore">阅读全文 &raquo; </span></a></p>
     </div>
-     {% endunless %}
 {% endfor %}
 
 <!-- Pagination links -->
