@@ -8,6 +8,7 @@ CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
   'draft' => File.join(SOURCE, "_draft"),
+  'pages' => File.join(SOURCE,"_pages")
   'post_ext' => "markdown",
 }
 
