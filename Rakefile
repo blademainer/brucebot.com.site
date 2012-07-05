@@ -39,7 +39,7 @@ EOS
 desc "Given a title as an argument, create a new post file"
 task :page, :title do |t, args|
   filename = "#{args.title.gsub(/\s/, '-').downcase}.markdown"
-  path = File.join("pages", filename)
+  path = File.join("_pages", filename)
   if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
   File.open(path, 'w') do |file|
     file.write <<-EOS
