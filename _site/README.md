@@ -22,7 +22,7 @@ There is a `draft` switch for each post, after finish the post, set it to `false
 
 ###New Page
 
-`rake write["title"]` 
+`rake page["title"]` 
 
 Automatically Open the new post in default text editor, Mine is [Mou](http://mouapp.com).
 

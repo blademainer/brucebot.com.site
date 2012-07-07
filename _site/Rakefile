@@ -35,9 +35,9 @@ EOS
     system "open #{path}"
  end #task rake write
 
-#Usage: rake write["title"]
+#Usage: rake page["title"]
 desc "Given a title as an argument, create a new post file"
-task :write, :title do |t, args|
+task :page, :title do |t, args|
   filename = "#{args.title.gsub(/\s/, '-').downcase}.markdown"
   path = File.join("pages", filename)
   if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
@@ -52,7 +52,7 @@ EOS
     end
     puts "Now open #{path} in an editor."
     system "open #{path}"
- end #task rake write page
+ end #task rake page
 
 desc "Launch preview environment"
 task :preview do
