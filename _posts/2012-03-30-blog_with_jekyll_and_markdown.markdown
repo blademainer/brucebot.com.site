@@ -4,7 +4,7 @@ categories:
   - 软件应用
 title: 使用jekyll写博客
 tags:
-  - jekyll
+  - jekyll  blog
 date: 2012-03-30 10:24:31
 ---
 * 2012-03-30 初成

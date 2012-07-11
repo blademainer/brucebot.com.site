@@ -50,7 +50,8 @@ module Jekyll
       max_size = 300
       self.process(@name)
       self.read_yaml(File.join(base, "_layouts"), "gallery_page.html")
-      self.data["gallery"] = gallery_name
+      self.data["gallery_path"] = gallery_name
+      self.data["gallery"] = gallery_name.gsub(/\s/, '-')
       gallery_title_prefix = site.config["gallery_title_prefix"] || "Gallery: "
       gallery_name = gallery_name.gsub("_", " ").gsub(/\w+/) {|word| word.capitalize}
       self.data["name"] = gallery_name
@@ -90,7 +91,7 @@ module Jekyll
       end      
       self.data["images"] = @images
       begin
-        best_image = site.config["galleries"][self.data["gallery"]]["best_image"]
+        best_image = site.config["galleries"][self.data["gallery_path"]]["best_image"]
       rescue
       end
       self.data["best_image"] = best_image
