@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Links
+title: 经常关注的网站
 ---
 
-### 工业机器人
+#工业机器人
+
 - [ABB Robotics](http://www.abb.com/robots)
 - [Adept Robotics](http://www.adept.com/)
 - [Comau Robotics](http://www.comau.com/)
@@ -20,7 +21,7 @@ title: Links
 - [Willow Garage](http://www.willowgarage.com/)
 - [Wowwee](http://www.wowwee.com/)
 
-### 朋友
+#朋友
 - [CNHACKTNT](http://knocks.me/)
 - [DigitalLifeStyle](https://www.dls-yan.com/)
 - [E.I.Art](http://eiart.net/blog/)
@@ -36,8 +37,43 @@ title: Links
 - [老于的技术BLOG](http://blog.sina.com.cn/headertec)
 - [鹤鸣的机器人BLOG](http://robotzhm.blog.tianya.cn)
 
-### 机器人新闻
+#机器人新闻
 - [Robot Magzine](http://www.botmag.com/index.shtml)
 - [Robotics Trends](http://www.roboticstrends.com/)
 - [Robots.Net](http://robots.net/)
 
+#Kindle
+- [书](http://shu.im/)
+- [ikandou](http://ikandou.com)
+
+#设计
+- [http://dribbble.com/](http://dribbble.com/)
+ 
+#编程
+- [How to start to learn ruby on rails](http://huacnlee.com/blog/how-to-start-learning-ruby-on-rails/)
+- [RVM](https://rvm.io/rvm/install/)
+- [Programming ruby](http://ruby-doc.org/docs/ProgrammingRuby/)
+
+#写作
+- [R Markdown App](http://r.psyapp.com/apps/markdown/)
+- [Pandoc Markdown-HTML convertor](http://johnmacfarlane.net/pandoc/try)
+
+#摄影
+- [色影无忌](http://www2.xitek.com/)
+- [蜂鸟网](http://fengniao.com)
+
+#字典
+- [新华字典](http://tool.httpcn.com/Zi/)
+- [在线新华字典](http://xh.5156edu.com/)
+
+#周易
+- [八字](http://fate1.com/showfate.asp)
+
+#理财
+- [fxcm](http://www.fxcm.com/forex-trading-course.jsp)
+- [昆仑国际](http://www.kvbkunlun.com/cn/)
+- [雪球网](http://xueqiu.com/4120924455)
+
+#Home Automation
+- [http://www.diy-ha.com/hardware.php](http://www.diy-ha.com/hardware.php)
+- [http://hacknmod.com/hack/diy-home-automation-tutorial/](http://hacknmod.com/hack/diy-home-automation-tutorial/)

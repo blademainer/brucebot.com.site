@@ -153,6 +153,11 @@ code {
   padding:0 .2em;
   border:1px solid #dedede;
 }
+code.has-jax {
+  font-size: 17px; 
+  background-color: #eee;
+    border-style: none;
+}
 p {
   margin-bottom: 0.8em;
   text-indent:2.1em;
