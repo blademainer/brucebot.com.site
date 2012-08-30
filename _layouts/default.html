@@ -75,7 +75,7 @@
 				<li id="sidebar-menu" class="widget-container">
 					<h3 class="widget-title">菜单</h3>
   						{% for category in site.categories %}
-  						<li><a href="/categories/{{category | first}}">{{category | first}}</a></li>
+  						<li><a href="/categories/{{category | first}}">{{category | first }}({{category | size}})</a></li>
   						{% endfor %}
   						<li class="roboticsbooks"><a href="/pages/Robotics-Books.html">机器人书籍</a></li>
   						<li class="archive"><a href="/archive.html">文章归档</a></li>
