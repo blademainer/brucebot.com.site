@@ -1,7 +1,15 @@
-markdown: rdiscount
 permalink: /:year/:month/:title/
 pygments: true
 #exclude: ['Rakefile', 'README.markdown','README.md', 'config.rb']
 base_url: http://brucebot.com
 paginate: 5 //the number of post per page
 gallery_dir: gallery
+exclude: /sytlesheet
+
+markdown: maruku
+maruku:
+  use_tex: true
+  use_divs: false
+  png_engine: blahtex
+  png_dir: images/latex/
+  png_url: /images/latex/

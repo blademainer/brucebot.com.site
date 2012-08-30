@@ -28,8 +28,12 @@ Automatically Open the new post in default text editor, Mine is [Mou](http://mou
 
 ###Rake deploy
 
-If you want to do *rake deploy* as I do, add your own remote site info to **Rakefile**
+If you want to do *rake deploy* as I do, add the code to **Rakefile**
 
-`system "jekyll --rdiscount && rsync -avz --progress --delete _site/ XXX@XXX.com:/home/jekyll/ "`
+ `system "git add . && git commit -m 'update post' && git push deploy master"
+		end # task :deploy`
+
+and setup following:[https://github.com/mojombo/jekyll/wiki/Deployment](https://github.com/mojombo/jekyll/wiki/Deployment)
+
 
 --EOF--
