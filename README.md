@@ -4,6 +4,14 @@ Read the Post [Blog with Jekyll and Markdown](http://brucebot.com/2012/03/blog_w
 
 ##Usage
 
+###Gallery
+Just Copy your photos folder to /gallery
+
+### Tweet
+
+Set twitter ID in tweets/tweets.php:
+
+`display_latest_tweets('brucebot');`
 
 ###instagram/likedphoto
 
