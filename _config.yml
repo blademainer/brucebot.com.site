@@ -2,7 +2,7 @@ markdown: rdiscount
 permalink: /:year/:month/:title/
 pygments: true
 exclude: ['Rakefile', 'README.markdown', 'config.rb']
-base_url: http://brucebot.com
+base_url: http://www.brucebot.com
 paginate: 7 //the number of post per page
 destination: /home/public_html/
 gallery_dir: gallery
