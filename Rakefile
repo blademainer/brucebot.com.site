@@ -61,11 +61,6 @@ task :preview do
   system "jekyll --rdiscount --server"
 end # task :preview
 
-#desc "Building the site and deploy to remote"
-#task :deploy do
-# system "jekyll --rdiscount && rsync -avz --progress --delete _site/ brucebot@brucebot.com:/home/brucebot/public_html/brucebot.jekyll/ "
-#end # task :deploy
-
 desc "deploy site to remote"
 task :deploy do
   system "git add . && git commit -m 'update post' && git push deploy master"
@@ -78,7 +73,7 @@ end # task :build
 
 desc "rsync all to remote"
 task :upload do
-  system "rsync -avz --progress --delete ../brucebot.jekyll/ brucebot@brucebot.com:/home/brucebot/jekyll/brucebot.jekyll/"
+  system "rsync -avz --progress --delete ../jekyll/ xxx@xxx.com:/home/xx/jekyll/"
 end #task :upload
 
 #Load custom rake scripts
