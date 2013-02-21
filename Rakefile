@@ -63,7 +63,8 @@ end # task :preview
 
 desc "deploy site to remote"
 task :deploy do
-  system "git add . && git commit -m 'update post' && git push deploy master"
+  #system "git add . && git commit -m 'update post' && git push deploy master"
+  system "git add . && git commit -m '#{Time.now.strftime('%Y-%m-%d %k:%M:%S')}' && git push deploy master"
 end # task :deploy
 
 desc "Building the site"
